@@ -1,0 +1,1837 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Glyphicons --> 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+           <!-- Custom styles for this template -->
+    <link href="css/sticky-footer.css" rel="stylesheet" />
+      <!-- JQUERY -->
+    <script src="js/jquery.js"></script>
+  <!-- JQUERY END-->
+   <!-- JS-->
+    <script src="js/bootstrap.js"></script>
+  <!-- JS END-->
+   
+  <!-- COLLAPSIBLE DIV SCRIPT -->
+        
+      <script type="text/javascript">
+          jQuery(document).ready(function () {
+              jQuery(".eggs").hide();
+              //toggle the componenet with class msg_body
+              jQuery(".scrambled").click(function () {
+                  jQuery(this).next(".eggs").slideToggle(500);
+              });
+          });
+
+          // POPOVER SCRIPT
+          $(function () {
+              $(".popover-examples a").popover({
+                  placement: 'top'
+              });
+          });
+          //END POPOVER SCRIPT
+
+          //NAVIGATE TO ESIGNATURES PAGE WHEN MODAL IS CLOSED
+          function move() {
+              window.location = 'esignatures.html'
+          }
+
+          //ENABLE 'GET E-SIGNATURES' BUTTON WHEN CHECKBOX IS CHECKED
+
+          function dis_enable_submit() {
+              if (document.getElementById("thisckbox").checked == 1) {
+                  document.getElementById("thissubmit").disabled = false;
+              }
+              else {
+                  document.getElementById("thissubmit").disabled = true;
+              }
+          }
+</script>
+
+  <!-- END COLLAPSIBLE DIV SCRIPT -->
+
+  
+
+
+      <style>
+          td {
+            width:20%;
+              
+          }
+          th {
+            width:20%
+              
+          }
+          .table {
+              text-align: left;
+              margin-bottom:0px;
+          }
+          .edit {
+              width: 10%;
+          }
+          .info {
+              width: 45%;
+          }
+          a {
+              cursor: pointer;
+          }
+          .navbar {
+                position: static;
+          }
+          hr {
+              height: 2px;
+              background-color: #428bca;
+          }
+          .glyphicon-remove {
+              cursor: pointer;
+          }
+          .bs-example{
+    	      margin: 150px 50px;
+          }
+          .detailButtons a {
+              width: 120px;
+          }
+          h1 {
+              font-size: 36px;
+          }
+          
+
+      </style>
+
+  </head>
+
+
+
+
+  <body>
+
+   
+<!-- LOGO -->
+<div class="row" style="margin-top:15px">
+<div class="container">
+    <div class="col-xs-12 col-sm-5 col-md-5">
+            <img class="img-responsive" src="img/impact_trader_logo.png" />
+                <p><strong>An end-to-end Impact Investing solution for Financial Advisors</strong></p>
+            </div>
+
+            <div class="col-md-7 col-sm-7 col-xs-12">
+                <div class="input-group pull-right col-xs-12 col-sm-8 col-md-6">
+                  <input type="text" class="form-control" placeholder="Search . . . ">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span> <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                      <li><a href="#">Search Offerings</a></li>
+                      <li><a href="#">Search Clients</a></li>
+                      <li><a href="#">Search Transactions</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            
+    </div>
+</div>
+ 
+ <!-- LOGO END -->
+ 
+    <div class="container">
+
+       <!-- NAVBAR -->
+        <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="AdvisorHome.html">Home</a></li>
+      <li><a href="Offerings.html">Impact Offerings</a></li>
+      <li><a href="Clients.html">Clients</a></li>
+      <li class="active"><a href="Transactions.html">Transactions&nbsp<span class="badge pull-right" style="background-color:#428bca">(4) Pending</span></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+        <!-- NAVBAR END -->
+
+
+      <!-- BEGIN CONFIRM CLIENT INFO -->
+    
+      <div class="container">
+                 <div class="col-xs-12 col-sm-5">
+                     <h1 style="font-size:36px">Confirm Clients</h1>
+                 </div>
+                 <div class="col-xs-12 col-sm-7">
+                    <a class="btn btn-success pull-right" href="ConfirmEdocs.html" style="width:100px">Next&nbsp<span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="btn btn-default pull-right" href="ConfirmOrder.html" style="width:100px;margin-right:5px">Back</a>
+                    <img class="pull-right img-responsive hidden-xs" style="margin-top:25px" src="img/StepTwo.PNG" />
+                 </div>
+       </div>
+       <div class="container well" style="margin-top:20px">
+                <div class="col-xs-2">
+                     <p class="text-muted" style="font-size:100px">A)</p>
+                </div>  
+                  <div class="col-xs-10" style="margin-bottom:50px">
+                    <ul class="list-unstyled list-inline">
+                      <li><h2 class="text-muted"><span class="glyphicon glyphicon-ok-circle"></span></h2></li>
+                      <li><h2 class="text-muted">Confirm Existing Info</h2></li>
+                    </ul>
+                 </div>
+                  <div class="col-xs-10">
+                      <ul class="list-unstyled list-inline detailButtons" >
+                          <li><h4>View Client Info:</h4></li>
+                          <li><a class="btn btn-default" data-toggle="modal" href="#myModalClient1">Bill Smith</a></li>
+                          <li><a class="btn btn-default" data-toggle="modal" href="#myModalClient2">Susan Jones</a></li>
+                          <li><a class="btn btn-default" data-toggle="modal" href="#myModalClient3">Sam Blank</a></li>
+                          <li><a class="btn btn-default" data-toggle="modal" href="#myModalClient4">Rajeev Ahuja</a></li>
+                      </ul>
+                     <form>
+                        <input type="checkbox" id="thisckbox" name="thisckbox" onclick="dis_enable_submit()" style="margin-left:5px" />&nbsp I have confirmed that all client info is accurate
+                      </form>
+            </div>
+        </div>
+
+      <!-- PROVIDE MISSING INFO -->
+
+      <div class="container well" style="margin-top:20px">
+          <div class="row">
+             <div class="col-xs-12">
+                <div class="col-xs-2">
+                     <p class="text-muted" style="font-size:100px;margin-left:10px">B)</p>
+                </div>  
+              <div class="col-xs-10">
+                    <ul class="list-unstyled list-inline">
+                      <li><h2 class="text-muted"><span class="glyphicon glyphicon-ok-circle"></span></h2></li>
+                      <li><h2 class="text-muted">Provide Missing Info</h2></li>
+                    </ul>
+                 </div>
+                  </div>
+              </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-2">
+                  <div class="col-xs-12">
+                      <h2>Bill Smith</h2>
+            </div>
+          <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Register for the Vermont Affordable Housing State Tax Credit?</p>
+            <a data-toggle="popover" data-content="This is a tax credit available to vermont residents if they invest in local affordable housing at below-market rates">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="" value="option1" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio1" value="option2">
+               No
+              </label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>Co-investor name</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text14" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text15" placeholder="Last Name">
+              </div>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Desired Return (0%-3.5%)</p>
+            <a data-toggle="popover" data-content="An investor may choose to receive a return that is below the maximum offered return in order to increase the ability of the Fund to acheive it's mission.">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Select Return <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">0%</a></li>
+                <li><a href="#">0.5%</a></li>
+                <li><a href="#">1%</a></li>
+                <li><a href="#">1.5%</a></li>
+                <li><a href="#">2%</a></li>
+                <li><a href="#">2.5%</a></li>
+                  <li><a href="#">3%</a></li>
+                  <li><a href="#">3.5%</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <h2>Susan Jones</h2>
+          <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Register for the Vermont Affordable Housing State Tax Credit?</p>
+            <a data-toggle="popover" data-content="This is a tax credit available to vermont residents if they invest in local affordable housing at below-market rates">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio2" value="option1" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio3" value="option2">
+               No
+              </label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>Co-investor name</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text16" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text17" placeholder="Last Name">
+              </div>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Desired Return (0%-3.5%)</p>
+            <a data-toggle="popover" data-content="An investor may choose to receive a return that is below the maximum offered return in order to increase the ability of the Fund to acheive it's mission.">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Select Return <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">0%</a></li>
+                <li><a href="#">0.5%</a></li>
+                <li><a href="#">1%</a></li>
+                <li><a href="#">1.5%</a></li>
+                <li><a href="#">2%</a></li>
+                <li><a href="#">2.5%</a></li>
+                  <li><a href="#">3%</a></li>
+                  <li><a href="#">3.5%</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <h2>Sam Blank</h2>
+          <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Register for the Vermont Affordable Housing State Tax Credit?</p>
+            <a data-toggle="popover" data-content="This is a tax credit available to vermont residents if they invest in local affordable housing at below-market rates">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio4" value="option1" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio5" value="option2">
+               No
+              </label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>Co-investor name</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text18" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text19" placeholder="Last Name">
+              </div>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Desired Return (0%-3.5%)</p>
+            <a data-toggle="popover" data-content="An investor may choose to receive a return that is below the maximum offered return in order to increase the ability of the Fund to acheive it's mission.">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Select Return <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">0%</a></li>
+                <li><a href="#">0.5%</a></li>
+                <li><a href="#">1%</a></li>
+                <li><a href="#">1.5%</a></li>
+                <li><a href="#">2%</a></li>
+                <li><a href="#">2.5%</a></li>
+                  <li><a href="#">3%</a></li>
+                  <li><a href="#">3.5%</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <h2>Rajeev Ahuja</h2>
+          <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Register for the Vermont Affordable Housing State Tax Credit?</p>
+            <a data-toggle="popover" data-content="This is a tax credit available to vermont residents if they invest in local affordable housing at below-market rates">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio6" value="option1" checked>
+                Yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="Radio7" value="option2">
+               No
+              </label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <p>Co-investor name</p>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text20" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="Text21" placeholder="Last Name">
+              </div>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 popover-examples">
+            <p>Desired Return (0%-3.5%)</p>
+            <a data-toggle="popover" data-content="An investor may choose to receive a return that is below the maximum offered return in order to increase the ability of the Fund to acheive it's mission.">What's This?</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Select Return <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">0%</a></li>
+                <li><a href="#">0.5%</a></li>
+                <li><a href="#">1%</a></li>
+                <li><a href="#">1.5%</a></li>
+                <li><a href="#">2%</a></li>
+                <li><a href="#">2.5%</a></li>
+                  <li><a href="#">3%</a></li>
+                  <li><a href="#">3.5%</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+   </div>
+</div>
+     <div class="container">      
+        <div class="col-xs-12">
+                    <a class="btn btn-success pull-right" href="ConfirmEdocs.html" style="width:100px">Next&nbsp<span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="btn btn-default pull-right" href="ConfirmOrder.html" style="width:100px;margin-right:5px">Back</a>
+         </div>
+     </div>
+
+
+
+
+      <!-- END CONFIRM CLIENTS -->
+
+<!-- MODAL CLIENT INFO 1 -->
+
+<div class="modal fade" id="myModalClient1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2 class="modal-title">Please Provide Required Info</h2>
+        </div>
+        <div class="modal-body">
+          <div class="container"
+            <div class="row">
+                <div class="col-md-9 col-sm-6 col-xs-12">
+                    <h3>Client Data - Bill Smith</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed modalTable">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Name</strong></td>
+                                <td class="info">Bill Avery Smith</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text1" placeholder="New First Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text6" placeholder="New Middle Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text7" placeholder="New Last Name">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>  
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Address</strong></td>
+                                <td class="info">123 Main St. New York, NY 43434</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text8" placeholder="New Street Address">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text22" placeholder="New City">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text23" placeholder="New State">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text24" placeholder="New Zip">
+                          </div>
+                          <div class="form-group">
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>   
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Email</strong></td>
+                                <td class="info">Bill@synergy.com</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text25" placeholder="New Email">
+                          </div>
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Primary Phone</strong></td>
+                                <td class="info">(484) 383-3939</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text26" placeholder="New Phone">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Date of Birth</strong></td>
+                                <td class="info">05-09-1963</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text27" placeholder="New Date of Birth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>SSN or EIN</strong></td>
+                                <td class="info">XXX-XX-5432</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text28" placeholder="New SSN or EIN">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employer</strong></td>
+                                <td class="info">Profitable, Inc.</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text29" placeholder="New Employer">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employment Status</strong></td>
+                                <td class="info">Employed</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text30" placeholder="New Employment Status">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Liquid Net Worth</strong></td>
+                                <td class="info">$1.8MM</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text31" placeholder="New Liquid Net Worth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Annual Income</strong></td>
+                                <td class="info">$270,000</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text32" placeholder="New Annual Income">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Income Tax Bracket</strong></td>
+                                <td class="info">35%</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text33" placeholder="New Tax Bracket">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Investment Knowledge / Experience</strong></td>
+                                <td class="info">Intermediate</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text34" placeholder="New Investment Knowledge">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Done</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+
+
+<!-- MODAL CLIENT INFO 2 -->
+
+<div class="modal fade" id="myModalClient2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2 class="modal-title">Please Provide Required Info</h2>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 col-xs-12">
+                    <h3>Client Data - Susan Jones</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed modalTable">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Name</strong></td>
+                                <td class="info">Susan Smith Jones</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text35" placeholder="New First Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text36" placeholder="New Middle Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text37" placeholder="New Last Name">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>  
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Address</strong></td>
+                                <td class="info">123 Main St. New York, NY 43434</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text38" placeholder="New Street Address">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text39" placeholder="New City">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text40" placeholder="New State">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text41" placeholder="New Zip">
+                          </div>
+                          <div class="form-group">
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>   
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Email</strong></td>
+                                <td class="info">Bill@synergy.com</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text42" placeholder="New Email">
+                          </div>
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Primary Phone</strong></td>
+                                <td class="info">(484) 383-3939</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text43" placeholder="New Phone">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Date of Birth</strong></td>
+                                <td class="info">05-09-1963</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text44" placeholder="New Date of Birth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>SSN or EIN</strong></td>
+                                <td class="info">XXX-XX-5432</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text45" placeholder="New SSN or EIN">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employer</strong></td>
+                                <td class="info">Profitable, Inc.</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text46" placeholder="New Employer">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employment Status</strong></td>
+                                <td class="info">Employed</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text47" placeholder="New Employment Status">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Liquid Net Worth</strong></td>
+                                <td class="info">$1.8MM</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text48" placeholder="New Liquid Net Worth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Annual Income</strong></td>
+                                <td class="info">$270,000</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text49" placeholder="New Annual Income">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Income Tax Bracket</strong></td>
+                                <td class="info">35%</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text50" placeholder="New Tax Bracket">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Investment Knowledge / Experience</strong></td>
+                                <td class="info">Intermediate</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text51" placeholder="New Investment Knowledge">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Done</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+
+<!-- MODAL CLIENT INFO 3 -->
+
+<div class="modal fade" id="myModalClient3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2 class="modal-title">Please Provide Required Info</h2>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 col-xs-12">
+                    <h3>Client Data - Sam Blank</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed modalTable">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Name</strong></td>
+                                <td class="info">Sam William Blank</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text52" placeholder="New First Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text53" placeholder="New Middle Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text54" placeholder="New Last Name">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>  
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Address</strong></td>
+                                <td class="info">123 Main St. New York, NY 43434</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text55" placeholder="New Street Address">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text56" placeholder="New City">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text57" placeholder="New State">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text58" placeholder="New Zip">
+                          </div>
+                          <div class="form-group">
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>   
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Email</strong></td>
+                                <td class="info">Bill@synergy.com</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text59" placeholder="New Email">
+                          </div>
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Primary Phone</strong></td>
+                                <td class="info">(484) 383-3939</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text60" placeholder="New Phone">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Date of Birth</strong></td>
+                                <td class="info">05-09-1963</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text61" placeholder="New Date of Birth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>SSN or EIN</strong></td>
+                                <td class="info">XXX-XX-5432</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text62" placeholder="New SSN or EIN">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employer</strong></td>
+                                <td class="info">Profitable, Inc.</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text63" placeholder="New Employer">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employment Status</strong></td>
+                                <td class="info">Employed</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text64" placeholder="New Employment Status">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Liquid Net Worth</strong></td>
+                                <td class="info">$1.8MM</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text65" placeholder="New Liquid Net Worth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Annual Income</strong></td>
+                                <td class="info">$270,000</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text66" placeholder="New Annual Income">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Income Tax Bracket</strong></td>
+                                <td class="info">35%</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text67" placeholder="New Tax Bracket">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Investment Knowledge / Experience</strong></td>
+                                <td class="info">Intermediate</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text68" placeholder="New Investment Knowledge">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Done</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+<!-- MODAL CLIENT INFO 2 -->
+
+<div class="modal fade" id="myModalClient4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2 class="modal-title">Please Provide Required Info</h2>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 col-xs-12">
+                    <h3>Client Data - Rajeev Ahuja</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed modalTable">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Name</strong></td>
+                                <td class="info">Rajeev Samson Ahuja</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text69" placeholder="New First Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text70" placeholder="New Middle Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text71" placeholder="New Last Name">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>  
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Address</strong></td>
+                                <td class="info">123 Main St. New York, NY 43434</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text72" placeholder="New Street Address">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text73" placeholder="New City">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text74" placeholder="New State">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text75" placeholder="New Zip">
+                          </div>
+                          <div class="form-group">
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>   
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Email</strong></td>
+                                <td class="info">Bill@synergy.com</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text76" placeholder="New Email">
+                          </div>
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-primary pull-right">Save</button>
+                          </div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Primary Phone</strong></td>
+                                <td class="info">(484) 383-3939</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text77" placeholder="New Phone">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Date of Birth</strong></td>
+                                <td class="info">05-09-1963</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text78" placeholder="New Date of Birth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>SSN or EIN</strong></td>
+                                <td class="info">XXX-XX-5432</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text79" placeholder="New SSN or EIN">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employer</strong></td>
+                                <td class="info">Profitable, Inc.</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text80" placeholder="New Employer">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Employment Status</strong></td>
+                                <td class="info">Employed</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text81" placeholder="New Employment Status">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Liquid Net Worth</strong></td>
+                                <td class="info">$1.8MM</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text82" placeholder="New Liquid Net Worth">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Annual Income</strong></td>
+                                <td class="info">$270,000</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text83" placeholder="New Annual Income">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Income Tax Bracket</strong></td>
+                                <td class="info">35%</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text84" placeholder="New Tax Bracket">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+                     <table class="table table-hover table-responsive table-condensed">
+                        <tbody>
+                            <tr>
+                                <td class="info"><strong>Investment Knowledge / Experience</strong></td>
+                                <td class="info">Intermediate</td>
+                                <td class="edit"><a>Edit</a></td>                                   
+                            </tr>
+                         </tbody>
+                    </table>
+                </div>
+            <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="Text85" placeholder="New Investment Knowledge">
+                          </div>
+                          <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+                    </form>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Done</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+
+      <br />
+      <br />
+
+
+      <!-- END CONFIRM ORDER -->
+
+     
+
+      <!-- Site footer -->
+    <div class="container"> 
+      <div id="footer" style="margin-top:50px;margin-bottom:25px">
+        <p class="muted-text credit">All securities offered through <a>Hexagon Securities, LLC &nbsp</a>| Member <a>FINRA/SIPC</a></p>
+        <p class="text-muted credit"> <a style="margin-right:25px">Broker Dealer Responsibilities</a>
+            <a style="margin-right:40px"> Risks of Investing in Securities</a>
+            <a style="margin-right:40px"> About</a>
+            <a style="margin-right:40px"> Legal</a>
+        </p>
+      </div>
+    </div>
+    
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
